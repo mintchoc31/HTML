@@ -11,7 +11,7 @@
         }
         ul, ol {list-style: none;}
         a {text-decoration: none; color: #111;}
-        input, textarea {outline: none;}
+        /*input, textarea {outline: none;}*/
 
         #container {
             width: 100%;
@@ -35,9 +35,10 @@
             width: 1000px;
             height: auto;
             margin: 5px auto;
+            overflow: hidden;
         }
         main > div {
-            overflow: hidden;
+           overflow: hidden;
         }
 
         main > div > div {
@@ -62,10 +63,10 @@
             height: 182px;
             margin-top: 5px;
         }
-        main > section > {
-            overflow: hidden;
+        main > article > {
+          overflow: hidden;
         }    
-        main > section > aside {
+        main > article > aside {
             float: left;
             width: 195px;
             height: 760px;
@@ -73,7 +74,7 @@
             border: 1px solid green;
             box-sizing: border-box;
         }
-        main > section > article {
+        main > article > div {
             float: right;
             width: 800px;
             height: 250px;
@@ -94,11 +95,9 @@
         </style>
     </head>
     <body>
-        <div id="container"></div>
+        <div id="container">
             <header>
-                <div>
-
-                </div>
+                <div></div>
              </header>    
              <main>
                 <div>
@@ -106,13 +105,17 @@
                     <div class="call"></div>
                     <div class="qna"></div> 
                 </div>
-                 <section>
+                 <article>
                     <aside></aside>
-                    <article></article>
-                    <article></article>
-                    <article></article>
-                </section>
-        </main>    
-        <footer></footer>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </article>
+            </main>    
+            <footer>
+                <div></div>
+            </footer>
+        </div>
+        
     </body>
 </html>
